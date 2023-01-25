@@ -227,3 +227,30 @@ button {
   width: 100%;
   margin: 30px auto;
 }
+
+#education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.eduBox {
+  width: 50%;
+  min-height: 100px;
+  padding: 5px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.aboutLinks {
+  margin: 15px auto;
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+}
