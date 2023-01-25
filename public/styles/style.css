@@ -1,0 +1,229 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), black);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.outerbox {
+  height: 100vh;
+  width: 100%;
+}
+.ballSmall {
+  height: 70px;
+  width: 70px;
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 218, 225),
+    rgb(154, 68, 253)
+  );
+  position: fixed;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 0px rgb(154, 68, 253);
+  transition: 0.8s;
+}
+
+.ballLarge {
+  height: 130px;
+  width: 130px;
+  background-image: radial-gradient(
+    circle,
+    rgb(248, 206, 143),
+    rgb(255, 69, 23)
+  );
+  box-shadow: 0px 0px 15px 0px rgb(255, 69, 23);
+  position: fixed;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+#photo {
+  position: fixed;
+  top: 0px;
+  right: 150px;
+  z-index: -1;
+}
+
+/* Header */
+.headerCover {
+  background-color: rgba(0, 0, 0, 0.76);
+  backdrop-filter: blur(10px);
+  top: 0px;
+  min-height: 50px;
+  height: fit-content;
+  width: 100%;
+  position: sticky;
+  z-index: 20;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-inline: 40px;
+  box-sizing: border-box;
+}
+.Title,
+.Links {
+  margin: auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle {
+  color: rgb(190, 132, 255);
+  margin: auto 15px;
+}
+
+#Logo {
+  font-size: 60px;
+  color: rgb(252, 118, 84);
+}
+
+.headerTitle :hover {
+  text-shadow: 0px 0px 7px rgb(190, 132, 255);
+}
+.Title :hover {
+  text-shadow: 0px 0px 10px rgb(252, 115, 81);
+}
+
+.Text {
+  padding: 20px;
+  position: fixed;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 150px;
+  z-index: 6;
+  top: 100px;
+}
+.insideText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: fit-content;
+  width: 400px;
+  flex-direction: column;
+}
+.insideText h2 {
+  font-size: 70px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 20px auto;
+}
+
+/* 
+ */
+.content {
+  padding: 100px;
+  width: 100%;
+  position: relative;
+  top: 1000px;
+  background-color: rgba(9, 9, 9, 0.94);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.normalText {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+.insideText p {
+  font-size: 20px;
+  color: rgb(178, 178, 178);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: left;
+}
+
+#projects {
+  height: fit-content;
+  width: 100%;
+  /* background-color: rgb(75, 75, 75); */
+  padding: 30px;
+  box-sizing: border-box;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.projectImages {
+  position: relative;
+  height: 350px;
+  width: 300px;
+  transform: rotate(80deg);
+  background-color: rgb(190, 132, 255);
+  box-shadow: 0px 0px 15px 0px rgb(190, 132, 255),
+    0px 0px 5px 0px rgb(190, 132, 255);
+}
+.projectImageCover {
+  box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-80deg);
+}
+.projectImageCover img {
+  height: 200px;
+  max-width: 300px;
+  border: solid rgb(252, 115, 81) 5px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(252, 115, 81);
+}
+.projectText {
+  width: 600px;
+  height: fit-content;
+}
+.vLine {
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 10px;
+  margin: auto 50px;
+}
+.projectText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  font-size: 70px;
+}
+
+button {
+  background-color: rgb(252, 118, 84);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.seprator {
+  height: 5px;
+  background-color: rgb(132, 132, 132);
+  width: 70%;
+}
+
+.lineTextMerge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px auto;
+}
